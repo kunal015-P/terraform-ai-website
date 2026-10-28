@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cloud AI Assistant</title>
+  <meta name="description" content="AI assistant powered by AWS and Terraform">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="brand" href="/">✦ Cloud AI</a>
+    <span class="status">● Online demo</span>
+  </header>
+
+  <main class="hero">
+    <p class="eyebrow">POWERED BY AWS</p>
+
+    <h1>
+      Your ideas,<br>
+      <span>meet intelligence.</span>
+    </h1>
+
+    <p class="intro">
+      An AI assistant deployed using Terraform,
+      Amazon S3, CloudFront, Lambda and Bedrock.
+    </p>
+
+    <section class="chat-card">
+      <div class="chat-header">
+        <div class="avatar">✦</div>
+        <div>
+          <strong>Cloud Assistant</strong>
+          <p>Ask a question to get started</p>
+        </div>
+      </div>
+
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="message assistant">
+          Hi! I'm your AI assistant. What would you like to know?
+        </div>
+      </div>
+
+      <form id="chat-form">
+        <label class="sr-only" for="question">Your message</label>
+
+        <input
+          id="question"
+          type="text"
+          maxlength="2000"
+          placeholder="Ask me anything..."
+          autocomplete="off"
+          required
+        >
+
+        <button id="send" type="submit">Send ↗</button>
+      </form>
+
+      <p class="disclaimer">
+        AI responses may be inaccurate. Don't submit sensitive information.
+      </p>
+    </section>
+
+    <p id="config-warning" hidden>
+      Configure the API URL in script.js after deployment.
+    </p>
+  </main>
+
+  <footer>
+    Built with Terraform · AWS · Generative AI
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

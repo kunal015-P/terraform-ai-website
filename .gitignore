@@ -1,0 +1,12 @@
+
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+terraform/terraform.tfvars
+terraform/backend.tf
+terraform/lambda_package.zip
+.env
+__pycache__/
+.DS_Store
